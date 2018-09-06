@@ -135,7 +135,8 @@ class WP_AutoUpdate
             $obj->slug = $data['slug'];  
             $obj->name = $data['name'];
             $obj->plugin_name = $data['slug'];
-            $obj->new_version = $data['version'];
+			$obj->new_version = $data['version'];
+			$obj->tested = $data['tested'];
             // the url for the plugin homepage
             $obj->url = $data['plugin_url'];
             //the download location for the plugin zip file (can be any internet host)
@@ -143,16 +144,14 @@ class WP_AutoUpdate
 
             switch ( $action ) {
                 case 'info':
-                    $obj->requires = $data['requires'];  
-                    $obj->tested = $data['tested'];  
-                    $obj->downloaded = 12540;  
+                    $obj->requires = $data['requires'];
+                    $obj->downloaded = 12540;
                     $obj->last_updated = $data['last_updated'];
-                    $obj->sections = array(  
-                        'description' => $data['sections']['description'],  
-                        'another_section' => $data['sections']['another_section'],  
-                        'changelog' => $data['sections']['changelog']  
+                    $obj->sections = array(
+                        'description' => $data['sections']['description'],
+                        'changelog' => $data['sections']['changelog']
                     );
-                    $obj->download_link = $obj->package;  
+                    $obj->download_link = $obj->package;
                 break;
             }
             return $obj;
