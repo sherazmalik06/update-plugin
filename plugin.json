@@ -1,5 +1,5 @@
 {
     "plugin-name" : "Plugin Auto Update", 
-    "plugin-slug":"plugin.php",
+    "plugin-slug":"plugin-auto-update.php",
     "version" : "1.0"
 }
