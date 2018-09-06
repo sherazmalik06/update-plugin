@@ -1,11 +1,5 @@
-[ 
-    {
-        "plugin-name" : "Plugin Auto Update", 
-        "plugin-slug":"plugin.php"
-    },
-    {
-        "version" : "1.0",
-        "current_version":"1.0"
-    },
-    
-]
+{
+    "plugin-name" : "Plugin Auto Update", 
+    "plugin-slug":"plugin.php",
+    "version" : "1.0"
+}
