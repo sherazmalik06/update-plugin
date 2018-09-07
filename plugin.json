@@ -1,7 +1,7 @@
 {
     "name" : "Plugin Auto Update", 
     "slug":"plugin-auto-update.php",
-    "version" : "1.4",
+    "version" : "1.5",
     "plugin_url": "https://bitbytes.io",
     "package_url": "https://github.com/sherazmalik06/update-plugin/raw/master/plugin-auto-update.zip",
     "requires": "4.0",
